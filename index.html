@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Code Quiz</title>
-</head>   
-<body>
-    <div>
-        <button class="show-score" id=""show-score></button>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>JavaScript Fundamentals Quiz</title>
+  </head>
+  <body>
+    <div id="quiz-container">
+      <h1 id="quiz-title">JavaScript Fundamentals Quiz</h1>
+      <div id="quiz-timer">Time left: 70 seconds</div>
+      <div id="quiz-score">Score: 0</div>
+      <p>Answer the following code-related questions within the time limit.
+        Incorrect answers will penalize your score/time by ten seconds!</p>
+      <div id="quiz-questions"></div>
+      <button id="start-button" onclick="startQuiz()" style= "display: block;">Start Quiz</button>
     </div>
-    <div id="intro-page">
-        <h1>Coding Quiz Challenge</h1>
-    <p>Try to answer the following code-related questions within the time limit.
-        Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-    <button id="start">Start Quiz</button>
-    </div>
-    <h2 id="countdown"></h2>
-    <div class="quiz-container" id="quiz-container"></div>
-    <div id="answer-determination"></div>
-    <script src="./assets/js/script.js"></script>
-</body>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
 
-// Layout HTML while thinking about how to best insert into the page through the quiz 
+
+<!-- Layout HTML while thinking about how to best insert into the page through the quiz 
 // Create new HTML file with reusable elements such as:
 // // 1. Question container
 // // 2. Initials container
@@ -39,4 +38,4 @@
 // // 4. Functions to start quiz, get question, and check answer, control the timer
 // // 5. Function to save high scores to local storage
 
-// Think about how to best format your files, should you put all of your JS in one file or divide it up into multiple by usecase??
+// Think about how to best format your files, should you put all of your JS in one file or divide it up into multiple by usecase?? 
